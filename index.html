@@ -2,191 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Physics Mythbusters</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Dunelm Catholic Yearbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT (TeX Gyre Termes alternative) -->
+  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tinos', serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #5b3fa6;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 22px;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    /* CONTENT */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .text-box {
+      max-width: 500px;
+    }
+
+    .text-box h3 {
+      color: #38bdf8;
+    }
+
+    .text-box ul {
+      line-height: 1.8;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #38bdf8;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+  </style>
 </head>
+
 <body>
- 
-  <header>
-      <img src= "images/ChatGPT Image Feb 26, 2026, 03_17_53 PM (2).png" alt="Title" width = "300">
-    <nav>
-      <div class="nav-item">
-      <a href="index.html">Home</a>
-      </div>
-      <div class="nav-item">
-      <a href="Climate.html">Climate Change</a>
-         <span class="nav-arrow">▾</span>
-         <div class="dropdown-menu">
-          <a href="Climate.html">What is Climate Change?</a>
-          <a href="Climate.Misinformation.html">Climate Myths</a>
-          <a href="Climate.Consequences.html">Consequences</a>
-          <a href="Climate.Politics.html">The Political Climate</a>
-          <a href="Climate.References.html">References</a>
-        </div>
-    
-      </div>
-      
-      <div class="nav-item">
-      <a href="Nuclear.html">Nuclear Energy</a>
-      <span class="nav-arrow">▾</span>
-      <div class="dropdown-menu">
-        <a href = "Nuclear.html">Introduction</a>
-        <a href = "nuclear-fission.html">Nuclear Fission</a>
-        <a href = "nuclear-misconceptions.html">Nuclear power misconcentpions</a>
-        <a href = "nuclear-safeguards.html">Nuclear power safeguards</a>
-        <a href = "nuclear-references">References</a>
-      </div>
-      </div>
 
-      
-
-      <div class="nav-item">
-        <a href="QM.html">The Quantum World</a>
-        <span class="nav-arrow">▾</span>
-
-        <div class="dropdown-menu">
-          <a href="QuantumMechanics.html">What is quantum physics?</a>
-          <a href="QuantumFields.html">What are quantum fields?</a>
-          <a href="Entanglement.html">What are entangled states?</a>
-          <a href="QuantumRef.html">References for this article</a>
-        </div>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h1>📘 Dunelm Yearbook</h1>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Societies</a>
+      <a href="#">Events</a>
+      <a href="#">Gallery</a>
+      <a href="#">Committee</a>
     </div>
-      
-      <div class="nav-item">
-        <a href="Radiation.html">Cellular Technology</a>
-        <span class="nav-arrow">▾</span>
+  </div>
 
-        <div class="dropdown-menu">
-          <a href="Radiation.html">What is Radiation?</a>
-          <a href="What-is-5G.html">What is 5G?</a>
-          <a href="Misinformation-radiation.html">5G Myths</a>
-          <a href="Politics-radiation.html">Impacts Globally</a>
-          <a href="RadiationRf.html">References</a>
-        </div>
-    </div>
-      
-<!-- Astronomy Dropdown -->
-    <div class="nav-item">
-      <a href="Astro.html">Astronomy</a>
-      <span class="nav-arrow">▾</span>
-
-      <div class="dropdown-menu">
-        <a href="examples.html">Misinformation</a>
-        <a href="astroconsequences.html">Consequences</a>
-        <a href="astrobustingmyths.html">Busting the Myths?</a>
-        <a href="astrodefinitions.html">Definitions</a>
-        <a href="astroreferences.html">References</a>
-      </div>
-    </div>
-      
-    <div class="nav-item">
-      <a href="SpotFakeNews.html">Spot Misinformation</a>
-      </div>
-    </nav>
-  </header>
-
-
-
-<section class="intro-center">
-  <h1  style="color:#bea8e0; text-align:center; margin-bottom:20px; font-size:3em;">
-    Welcome to Physics Mythbusters!
-  </h1>
-
-  <p class="intro-text">
-    Physics is all around us, from the smartphones in our pockets to the satellites above us. However, it remains one of the most misunderstood 
-    sciences, leaving information vulnerable to misuse and exploitation to sway public opinion.
-  </p>
-</section>
-
-
-
-<section class="intro-split">
-
-
-  <div class="intro-left">
-    
-    <p style = "color:#4fc3f7;">We aim to do three things:</p>
-
-    <ul>
-      <li><strong>Identify misinformation and common misconceptions</strong></li>
-      <li><strong>Explain its errors</strong></li>
-      <li><strong>Rebuild understanding of the concept</strong></li>
-    </ul>
-
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Welcome to the Yearbook</h2>
     <p>
-      Whether its blackholes opening gateways to another universe, or magically healing quantum crystals, we strive to separate fact from fiction to provide YOU with clarity.
+      Celebrating the people, events, and memories of the year.
+      Explore societies, highlights, and unforgettable moments
+      from Dunelm Catholic Society.
     </p>
+  </section>
 
-    <p style = "color:#4fc3f7;">Here you can find:</p>
+  <!-- MAIN CONTENT -->
+  <div class="container">
 
-    <ul>
-      <li><strong>Clear scientific explanations</strong></li>
-      <li><strong>Evidence-based analysis of claims</strong></li>
-      <li><strong>Advice on spotting pseudoscience</strong></li>
-    </ul>
+    <!-- TEXT SIDE -->
+    <div class="text-box">
+      <h3>What you'll find:</h3>
+      <ul>
+        <li>📸 Event highlights</li>
+        <li>👥 Society showcases</li>
+        <li>🏆 Achievements</li>
+      </ul>
 
-    <p style = "color:#ffb86c;"><strong>Let’s Bust Some Myths!</strong></p>
-    
+      <p>
+        This yearbook captures the spirit of our community —
+        from formal events to everyday moments, bringing together
+        the best of the year in one place.
+      </p>
+    </div>
+
+    <!-- CARD -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Preview">
+      <h3>Explore Highlights</h3>
+      <p>Browse the best moments from the year.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
   </div>
 
-
-  <div class="intro-right">
-    <section class="feature-home">
-      <img src="images/PMF-Fake-News_sito-1400x760px.jpg" alt="Main Feature">
-      <h2>Spot Fake News</h2>
-      <p>Find out how to spot fake news.</p>
-      <a href="SpotFakeNews.html" class="button">Read More</a>
-    </section>
-  </div>
-</section>
-<section class="stories-home">
-
-
-  <article class="story-home large">
-    <img src="images/ClimateHome.jpg" alt="Climate">
-    <h2>Is Climate Change a Lie?</h2>
-    <p>How politics and missinformation is shaping our response to a warming world.</p></p>
-    <a href="Climate.html" class="button">Read More</a>
-  </article>
-
-
-   <article class="story-home small">
-    <img src="images/Screenshot 2026-02-11 102905.png" alt="5G">
-    <h3>5G: Is it Really a Death Wish?</h3>
-    <p>New 5G technology breeds health fears and distrust in mainstream science</p>
-    <a href="Radiation.html" class="button">Learn more</a>
-  </article>
-
-
-  <article class="story-home small">
-    <img src="images/Screenshot 2026-01-28 214150.png" alt="Quantum">
-    <h3>The invention of Ibupro-spin</h3>
-    <p>How quantum mechanics is being abused to sell alternative medicine and self-help</p>
-    <a href="QM.html" class="button">Learn more</a>
-  </article>
-  
-  <article class="story-home small">
-    <img src="images/Screenshot 2026-02-11 104038.png" alt="Nuclear">
-    <h3>Nuclear Energy the Full Picture</h3>
-    <p>How common misconceptions of nuclear power lead to misapplied physics</p>
-    <a href="Nuclear.html" class="button">Learn More</a>
-  </article>
- 
-
-  <article class="story-home small">
-    <img src="images/Screenshot 2026-01-28 215227.png" alt="Astronomy">
-    <h3>Sucked in: Blackholes</h3>
-    <p>How pseudoscientific information on blackholes aims to pull you in</p>
-    <a href="Astro.html" class="button">Learn more</a>
-  </article>
-
-</section>
-
-  <footer>
-  <p>© 2026 Misuse of Physics Project | 
-    <a href="AIstatement.html" style="color:#38d9a9; text-decoration: underline;">AI STATEMENT</a>
-  </p>
-</footer>
 </body>
 </html>
